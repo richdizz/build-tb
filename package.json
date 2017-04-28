@@ -1,0 +1,37 @@
+{
+  "name": "tactbot",
+  "version": "0.1.0",
+  "main": "server.js",
+  "scripts": {
+    "init": "npm install",
+    "build": "typings install && tsc -p ./",
+    "start": "npm run build && node ./src/server/server.js",
+    "debug": "npm run build && DEBUG=msdx:* node-debug --no-debug-brk ./src/server/server.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "adal-node": "0.1.19",
+    "colors": "1.1.2",
+    "connect-logger": "0.0.1",
+    "cookie-parser": "1.4.2",
+    "cookie-session": "1.2.0",
+    "debug": "^2.2.0",
+    "express": "4.13.4",
+    "express-session": "1.13.0",
+    "hbs": "4.0.0",
+    "lodash": "4.13.1",
+    "nconf": "0.8.4",
+    "node-uuid": "1.4.7",
+    "q": "1.4.1",
+    "request": "2.72.0",
+    "request-promise": "4.2.0",
+    "session-file-store": "0.2.0",
+    "botbuilder": "3.7.0",
+    "restify": "4.3.0",
+    "http": "0.0.0"
+  },
+  "devDependencies": {
+    "@types/es6-shim": "^0.31.33"
+  }
+}

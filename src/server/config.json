@@ -1,0 +1,11 @@
+{
+  "aad-tenant-id": "",
+  "aad-client-id": "",
+  "aad-client-secret": "",
+  "aad-authority": "https://login.microsoftonline.com/",
+  "aad-graph-api-resource": "https://graph.windows.net",
+  "redirect-endpoint": "http://localhost:3000/auth",
+  "post-logout-redirect-uri": "http://localhost:3000/",
+  "aad-authorization-endpoint-template": "https://login.microsoftonline.com/{{tenantid}}/oauth2/authorize?client_id={{clientid}}&redirect_uri={{redirecturi}}&state={{state}}&response_type=code",
+  "aad-logout-endpoint-template": "https://login.microsoftonline.com/{{tenantid}}/oauth2/logout?post_logout_redirect_uri={{postLogoutRedirectUri}}"
+}
